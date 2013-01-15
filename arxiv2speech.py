@@ -22,7 +22,7 @@ author_re = re.compile(r"<a href=\"(?:.*?)\">(.*?)</a>")
 
 
 def run(basedir, url="http://export.arxiv.org/rss/astro-ph",
-        clobber=False, quiet=False):
+        clobber=False, quiet=False, limit=None):
     # Make the base directory.
     try:
         os.makedirs(basedir)
@@ -39,7 +39,9 @@ def run(basedir, url="http://export.arxiv.org/rss/astro-ph",
     if not quiet:
         print("    ... Found {0} abstracts.".format(len(abstracts)))
 
-    abstracts = abstracts[:3]
+    if limit is not None:
+        print("Limiting to {0} total.".format(limit))
+        abstracts = abstracts[:int(limit)]
 
     if not quiet:
         print("Saving audio files (slowly) in: {0}".format(basedir))

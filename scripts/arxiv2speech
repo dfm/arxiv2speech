@@ -2,13 +2,15 @@
 """
 Render the most recent listings on the arXiv to a set of audio files.
 
-Usage: arxiv2speech [-h | --help] [-u URL] [-o OUTPUT] [--clobber]
+Usage: arxiv2speech [-h | --help]
+       arxiv2speech [-u URL] [-o OUTPUT] [--clobber] [--quiet] [--limit N]
 
     -h --help  show this
     -u URL     custom arXiv RSS [default: http://export.arxiv.org/rss/astro-ph]
     -o OUTPUT  base directory for output [default: ./build]
     --clobber  overwrite an existing archive
     --quiet    don't print any status messages
+    --limit N  limit the number of abstracts analysed
 
 """
 
@@ -33,4 +35,4 @@ from arxiv2speech import run
 if __name__ == "__main__":
     arguments = docopt(__doc__)
     run(arguments["-o"], url=arguments["-u"], clobber=arguments["--clobber"],
-        quiet=arguments["--quiet"])
+        quiet=arguments["--quiet"], limit=arguments["--limit"])

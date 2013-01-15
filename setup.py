@@ -17,7 +17,7 @@ setup(
     author="Dan Foreman-Mackey",
     author_email="danfm@nyu.edu",
     url="https://github.com/dfm/arxiv2speech",
-    packages=["arxiv2speech"],
+    py_modules=["arxiv2speech"],
     package_data={"": ["LICENSE"]},
     include_package_data=True,
     scripts=["scripts/arxiv2speech"],
