@@ -12,7 +12,7 @@ import subprocess
 from multiprocessing import Pool
 
 import feedparser
-from arxiv2speech.html2text import html2text
+from html2text import html2text
 
 
 # Regular expressions.
@@ -72,8 +72,7 @@ def _run_one(args):
                    os.path.join(basedir, "authors.m4a"))
     assert r == 0, "Couldn't save authors for: {0}".format(abstract["id"])
 
-    r = text2audio(", ".join(abstract["abstract"]),
-                   os.path.join(basedir, "abstract.m4a"))
+    r = text2audio(abstract["abstract"], os.path.join(basedir, "abstract.m4a"))
     assert r == 0, "Couldn't save abstract for: {0}".format(abstract["id"])
 
 

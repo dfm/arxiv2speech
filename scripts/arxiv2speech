@@ -14,6 +14,8 @@ Usage: arxiv2speech [-h | --help] [-u URL] [-o OUTPUT] [--clobber]
 
 from __future__ import absolute_import, unicode_literals
 
+from docopt import docopt
+
 try:
     import arxiv2speech
     arxiv2speech = arxiv2speech
@@ -26,7 +28,6 @@ except ImportError:
     arxiv2speech = arxiv2speech
 
 from arxiv2speech import run
-from arxiv2speech.docopt import docopt
 
 
 if __name__ == "__main__":

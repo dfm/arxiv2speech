@@ -21,10 +21,10 @@ setup(
     package_data={"": ["LICENSE"]},
     include_package_data=True,
     scripts=["scripts/arxiv2speech"],
-    install_requires=["feedparser"],
+    install_requires=["html2text", "docopt", "feedparser"],
     classifiers=(
         "Development Status :: 3 - Alpha",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "License :: OSI Approved :: MIT License",
         "Intended Audience :: Science/Research",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
