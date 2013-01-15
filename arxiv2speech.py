@@ -4,6 +4,11 @@ from __future__ import print_function, absolute_import, unicode_literals
 
 __all__ = ["run"]
 
+__version__ = "0.0.3"
+__author__ = "Dan Foreman-Mackey (danfm@nyu.edu)"
+__copyright__ = "Copyright 2013 Daniel Foreman-Mackey"
+__contributors__ = []
+
 import os
 import re
 import json
