@@ -6,6 +6,11 @@ Inspired by a hack suggested at ``#hackAAS`` by `Kathy Cooksey
 Built by `Dan Foreman-Mackey <http://dan.iel.fm>`_ and distributed under
 the BSD 2-clause license (see ``LICENSE``).
 
+**This web scraping project makes use of the `html2text
+<http://www.aaronsw.com/2002/html2text/>`_ module written by one of the
+greatest scrapers that that community has known: `Aaron Swartz
+<http://www.aaronsw.com/>`_.**
+
 
 Installation
 ------------
