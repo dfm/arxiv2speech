@@ -1,4 +1,6 @@
 .DS_Store
-*.pyc
+*.py[oc]
 *.m4a
 build
+dist
+*.egg-info
