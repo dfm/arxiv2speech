@@ -4,7 +4,7 @@ Inspired by a hack suggested at ``#hackAAS`` by `Kathy Cooksey
 <https://twitter.com/klcooksey>`_.
 
 Built by `Dan Foreman-Mackey <http://dan.iel.fm>`_ and distributed under
-the MIT license (see ``LICENSE``).
+the BSD 2-clause license (see ``LICENSE``).
 
 
 Installation

@@ -29,7 +29,7 @@ setup(
     install_requires=["html2text", "docopt", "feedparser"],
     classifiers=(
         "Development Status :: 3 - Alpha",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: BSD License",
         "Intended Audience :: Science/Research",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
