@@ -10,7 +10,7 @@ if sys.argv[-1] == "publish":
 
 setup(
     name="arxiv2speech",
-    version="0.0.1",
+    version="0.0.2",
     description="Convert the current abstracts listed on the arxiv to a set "
                 "of audio files.",
     long_description=open("README.rst").read(),
