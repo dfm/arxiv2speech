@@ -27,10 +27,12 @@ Usage
 
 ::
 
-    Usage: arxiv2speech [-h | --help] [-u URL] [-o OUTPUT] [--clobber]
+    Usage: arxiv2speech [-h | --help]
+           arxiv2speech [-u URL] [-o OUTPUT] [--clobber] [--quiet] [--limit N]
 
     -h --help  show this
     -u URL     custom arXiv RSS [default: http://export.arxiv.org/rss/astro-ph]
     -o OUTPUT  base directory for output [default: ./build]
     --clobber  overwrite an existing archive
     --quiet    don't print any status messages
+    --limit N  limit the number of abstracts analysed
