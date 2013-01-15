@@ -68,12 +68,16 @@ def _run_one(args):
               sort_keys=True, indent=4, separators=(",", ": "))
 
     # Save the audio files.
-    r = text2audio(abstract["title"], os.path.join(basedir, "title.m4a"))
-    assert r == 0, "Couldn't save title for: {0}".format(abstract["id"])
+    by = "\n\nBy: " + abstract["authors"][0]
+    l = len(abstract["authors"])
+    if l == 2:
+        by += " and " + abstract["authors"][1]
+    elif l > 2:
+        by += " and {0} others.".format(l - 1)
 
-    r = text2audio(abstract["authors"][0],
-                   os.path.join(basedir, "first_author.m4a"))
-    assert r == 0, "Couldn't save first author for: {0}".format(abstract["id"])
+    r = text2audio(abstract["title"] + by,
+                   os.path.join(basedir, "brief.m4a"))
+    assert r == 0, "Couldn't save brief for: {0}".format(abstract["id"])
 
     r = text2audio(", ".join(abstract["authors"]),
                    os.path.join(basedir, "authors.m4a"))

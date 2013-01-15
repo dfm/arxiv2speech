@@ -1,9 +1,10 @@
 **Note: this only works on Mac OS X.**
 
-Inspired by a hack suggested at ``#hackAAS`` by [someone?].
+Inspired by a hack suggested at ``#hackAAS`` by `Kathy Cooksey
+<https://twitter.com/klcooksey>`_.
 
 Built by `Dan Foreman-Mackey <http://dan.iel.fm>`_ and distributed under
-MIT (see ``LICENSE``).
+the MIT license (see ``LICENSE``).
 
 
 Installation
