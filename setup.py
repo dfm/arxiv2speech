@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import re
 import os
 import sys
 from setuptools import setup
@@ -8,9 +9,13 @@ if sys.argv[-1] == "publish":
     os.system("python setup.py sdist upload")
     sys.exit()
 
+# Hackishly synchronize the version.
+version = re.findall(r"__version__ = \"(.*?)\"",
+                     open("arxiv2speech.py").read())[0]
+
 setup(
     name="arxiv2speech",
-    version="0.0.2",
+    version=version,
     description="Convert the current abstracts listed on the arxiv to a set "
                 "of audio files.",
     long_description=open("README.rst").read(),
